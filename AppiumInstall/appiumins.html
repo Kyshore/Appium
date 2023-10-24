@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appium Installation</title>
+    <link rel="stylesheet" href="./appiumins.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="grid-container">
+        <div class="first">
+            <img class="topimg" src="../assets/images/AppiumInsImg/Step-By-Step.png"  alt="NodeJS IMG"/>
+        </div>
+        <div class="second" >
+            
+            <h1  id="appiuminstallation1" style="font-size: 2rem;">Appium setup </h1>
+            <a class="specialahref" href="#appiuminstallation" >Appium Installation</a>
+            <a class="specialahref" href="#appiuminstallation2"><p class="secondgrid">Difference between Version 1 and Version 2  </p></a>
+            
+
+        </div>
+        <div class="third">
+            <div><h1>Install Appium</h1></div>
+            <div><p id="appiuminstallation">Installing Appium is as easy as running a single NPM command:</p></div>
+
+            <div>
+            <p class="adb1"> Microsoft Windows [Version 10.0.22621.2428]<br>
+                (c) Microsoft Corporation. All rights reserved.</p>
+            <p class="adb2">C:\Users\newky>npm install -g appium|</p></div>
+
+            <div><p>This command installs Appium globally on your system, <br> so that you can access it from the command line simply by running the appium command.<br> Go ahead and run it now:</p></div>
+            <div><p class="adb1"> Microsoft Windows [Version 10.0.22621.2428]<br>
+                (c) Microsoft Corporation. All rights reserved.</p>
+            <p class="adb2">C:\Users\newky>appium|</p></div>
+            <div><p>You should see some output that starts with a line like this:</p></div>
+            <div><p class="adb1"> Microsoft Windows [Version 10.0.22621.2428]<br>
+                (c) Microsoft Corporation. All rights reserved.</p>
+                <p class="adb1" style="margin-bottom: 0px;  margin-top: 0px;" >C:\Users\newky>appium</p>    
+            <p class="adb2" style="padding-top: 0px;"><span class="adbspan">[Appium]</span> Welcome to Appium v1.22.3</p></div>     
+            <div><p>That's it! If you get this kind of output, the Appium server is up and running.<br> Go ahead and quit it (CTRL-C) and move on to the next step, where we'll install a driver for automating Android apps.</p></div>    
+            <div><p>The above command is used both for checking the Appium Version also to start the Appium Server.</p></div>    
+            <table id="appiuminstallation2">
+                <tr>
+                    <th>Appium Version 1</th>
+                    <th>Appium Version 2</th>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div>
+                            <p class="adb1"> Microsoft Windows [Version 10.0.22621.2428]<br>
+                                                (c) Microsoft Corporation. All rights reserved.</p>
+                            <p class="adb1" style="margin-bottom: 0px;  margin-top: 0px;" >C:\Users\newky>appium</p>    
+            <p class="adb2" style="padding-top: 0px;"><span class="adbspan">[Appium]</span> Welcome to Appium v1.22.3</p></div>
+                        </div>
+                    </td>
+                    
+                    <td>
+                        <div>
+                            <p class="adb1"> Microsoft Windows [Version 10.0.22621.2428]<br>
+                                                (c) Microsoft Corporation. All rights reserved.</p>
+                                                <p class="adb1" style="margin-bottom: 0px;  margin-top: 0px;" >C:\Users\newky>appium</p>    
+                                                <p class="adb2" style="padding-top: 0px;"><span class="adbspan">[Appium]</span> Welcome to Appium v2.0.0</p></div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td rowspan="2" style="border-radius: 0px 0px 0px 20px ;">
+                        <p class="tablep">When you installed Appium Version 1x, all available drivers would be <br>installed at the same time as the main Appium server.</p> 
+                    </td>
+                    <td>
+                        <p class="tablep">Installing Appium 2.0 (e.g., by npm install -g appium <br><mark>or</mark> <br> npm install --location=global appium),<br> will install the Appium server only, but no drivers.<br> To install drivers, use the following command</p>
+                        <div>
+                            <p class="adb1"> Microsoft Windows [Version 10.0.22621.2428]<br>
+                                                (c) Microsoft Corporation. All rights reserved.</p>
+                                                <p class="adb1" style="margin-bottom: 0px;  margin-top: 0px;" >C:\Users\newky>appium driver install uiautomator2</p>    
+                                                
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    
+                    <td style="border-radius: 0px 0px 20px 0px ;">
+                        <p style="text-align: center ;">Installing UiAutomator2 drivers</p>
+                        <div>
+                            <p class="adb1"> Microsoft Windows [Version 10.0.22621.2428]<br>
+                                                (c) Microsoft Corporation. All rights reserved.</p>
+                                                <p class="adb1" style="margin-bottom: 0px;  margin-top: 0px; font-size: 1.1rem;" >C:\Users\newky>Attempting to find and install driver 'uiautomator2'<br>
+                                                    ✔ Installing 'uiautomator2' using NPM install spec 'appium-uiautomator2-driver'<br>
+                                                    Driver uiautomator2@2.0.5 successfully installed<br>
+                                                    - automationName: UiAutomator2<br>
+                                                    - platformNames: ["Android"]
+                                                    </p>    
+                                                
+                        </div>
+                    </td>
+                </tr>
+            </table>
+                
+                
+
+            
+            <div><p>Installation is of Appium is completed.</p></div>    
+            
+        </div>
+        <div ><a href="../index.html"><p class="buttonback button1">  Back  </p><a/>
+        <div ><a href="#appiuminstallation1"><p class="button button1">  Top  </p><a/>
+    </div>
+    
+</body>
+</html>

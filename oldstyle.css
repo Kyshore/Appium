@@ -1,0 +1,53 @@
+.myDiv {
+    border: 5px outset red;
+    background-color: lightblue;    
+    text-align: center;
+  }
+  
+  table, th, td {
+    border:1px solid black;
+  }
+  tr,td{
+  background-color: #96D4D4;
+  }
+  h1{ color:222831;
+    font-family: 'Roboto', sans-serif;
+  }
+html{
+  background-color: #EEEEEE;
+  color: #393E46;
+  font-family: 'Roboto', sans-serif;
+}  
+  dl {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #AppiumV4{
+    height: 150px;
+    width: 500px;
+  }
+  
+  div {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    text-decoration: dashed;
+    font-size: x-large;
+    color: white;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  @keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px; color: black x`x`;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }

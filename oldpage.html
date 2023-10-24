@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Appium Tutorials</title>
+    <link rel="stylesheet" href="./oldstyle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div>Appium</div>
+<img src="./assets/images/AppiumV4.png" alt="logo" id="AppiumV4"> <br>
+
+<h1 style="background-color:#00ADB5;" >Appium Installation</h1>
+<h2>Node JS Installation</h2>
+<p>Node JS download <a href="NodejsSteps.html" alt="Steps to install Node JS">Node JS Steps to install</a></br>
+After installation to confirm whether node is successfully installed and also to check the version </br>
+Go to command prompt and type <mark>node -v</mark></br>
+</p>
+
+<h2>Appium installation</h2> 
+<p>Appium install through command prompt <a href="AppiumSteps.html" alt="Steps to install Appium">Appium Steps to install</a></br>
+<mark>npm install -g appium </mark>
+
+<h2>Android studio installation</h2>
+<p>Android Studio download <a href="AndroidStudioSteps.html" alt="Steps to install Android Studio">Android Studio Steps to install</a></br>
+Additional Steps to be followed
+
+<h2>Appium inspector installation</h2>
+<p>Appium inspector download <a href="AppiuminspectorSteps.html" alt="Steps to install Appium Inspector">Appium Inspector Steps to install</a></br>
+Additional Steps to be followed
+
+<h2>Appium doctor installation</h2>
+<p>Appium doctor download <a href="AppiumdoctorSteps.html" alt="Steps to install Appium doctor">Appium doctor Steps to install</a></br>
+Additional Steps to be followed
+
+<h2>Vysor installation</h2>
+<p>Vysor download <a href="VysorSteps.html" alt="Steps to install Vysor">Vysor Steps to install</a></br>
+Additional Steps to be followed
+
+<br></p>
+
+Set Environment Varibles for system  <del>[not user]</del>  <mark>[Shortcut to find system Varibles in Command prompt SET]</mark>
+<dl>
+ <strong> <dt>ANDROID_HOME</dt></strong>
+  <dd>- C:\Users\newky\AppData\Local\Android\Sdk</dd>
+ <strong> <dt>JAVA_HOME</dt></strong>
+  <dd>- C:\Program Files\Java\jdk1.8.0_351</dd>
+ <strong> <dt>MAVEN_HOME</dt></strong>
+  <dd>- C:\Users\newky\Downloads\apache-maven-3.8.6-bin\apache-maven-3.8.6</dd>
+</dl>
+
+<address>
+Set Path==<br>
+C:\Program Files\nodejs\;<br>
+C:\Program Files\Java\jdk1.8.0_351\bin;<br>
+C:\Users\newky\Downloads\apache-maven-3.8.6-bin\apache-maven-3.8.6\bin;(OPTIONAL)<br>
+C:\Users\newky\AppData\Roaming\npm(OPTIONAL)<br>
+C:\Users\newky\AppData\Local\Android\Sdk;<br>
+C:\Users\newky\AppData\Local\Android\Sdk\platform-tools\adb.exe;<br>
+C:\Users\newky\AppData\Local\Android\Sdk\platform-tools;<br>
+C:\Users\newky\AppData\Local\Android\Sdk\build-tools;<br>
+C:\Users\newky\AppData\Local\Android\Sdk\tools;<br>
+</address>
+
+
+
+
+<h2> Locator Stratergies</h2>
+<table style="width:40%">
+<tr>
+<th style="width:33.3%">Locator Stratergy</th>
+<th style="width:33.3%">Android</th>
+<th style="width:33.3%">Ios</th>
+</tr>
+<tr>
+<td style = "text-align:center">Accessibility id</td>
+<td style = "text-align:center">content-desc</td>
+<td style = "text-align:center">accessibility-id</td>
+</tr>
+<tr>
+<td style = "text-align:center">Class name</td>
+<td style = "text-align:center">class</td>
+<td style = "text-align:center">class</td>
+</tr>
+<tr>
+<td style = "text-align:center">ID</td>
+<td style = "text-align:center">resource-id/ID	</td>
+<td style = "text-align:center">name/ID</td>
+</tr>
+<tr>
+<td style = "text-align:center">name</td>
+<td style = "text-align:center">name</td>
+<td style = "text-align:center">name</td>
+</tr>
+<tr>
+<td style = "text-align:center">Xpath</td>
+<td style = "text-align:center">Xpath</td>
+<td style = "text-align:center">Xpath</td>
+</tr>
+</table>
+
+<h1>  </h1>
+
+<!--
+<div class="myDiv">
+  <h2>This is a heading in a div element</h2>
+  <p>This is some text in a div element.</p>
+</div>
+-->
+
+<dl>
+  <dt>devices attached</dt>
+  <dd>adb devices</dd>
+  <dt>to Connect wireless</dt>
+  <dd>adb tcpip 5555 or 5050 or any port<br>
+adb connect [IPADDRESS:PORT]</dd>
+</dl>
+
+
+
+adb devices
+
+
+adb tcpip 5555 or 5050 or any port
+adb connect [IPADDRESS:PORT]
+
+adb pull [source] [destination]
+
+adb pull [destination] [source]
+
+adb shell input text "type\ like\ this"
+
+adb shell pm list packages
+
+To get Platform
+adb shell getprop net.bt.name
+
+To get PlatformVersion
+adb shell getprop ro.build.version.release
+
+To get device name
+adb shell getprop persist.sys.device_name
+
+adb shell wm size
+adb shell wm density
+</body>
+</html>
